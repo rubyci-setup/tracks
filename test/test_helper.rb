@@ -1,7 +1,9 @@
 ENV['RAILS_ENV'] ||= 'test'
+require "minitest/stub_const"
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'securerandom'
+
 
 # set config for tests. Overwrite those read from config/site.yml. Use inject to avoid warning about changing CONSTANT
 {
